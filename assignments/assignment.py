@@ -72,8 +72,4 @@ def load_penguin_data():
         A tuple containing two numpy arrays. The first array, 'X', contains the bill length and depth measurements. The second array, 'labels', contains the species information.
     """
     url = "https://raw.githubusercontent.com/allisonhorst/palmerpenguins/c19a904462482430170bfe2c718775ddb7dbb885/inst/extdata/penguins.csv"
-    df = pd.read_csv(url)
-    df = df.dropna()
-    X = df[["bill_length_mm", "bill_depth_mm"]].to_numpy()
-    labels = df["species"].to_numpy()
-    return X, labels
+    pass
