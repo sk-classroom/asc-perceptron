@@ -27,11 +27,15 @@ class TestPerceptron(unittest.TestCase):
         self.assertAlmostEqual(prediction[0], 1)
         self.assertAlmostEqual(prediction[1], 0)
 
+
+class TestData(unittest.TestCase):
     def test_load_penguin_data(self):
         X, y = load_penguin_data()
         self.assertEqual(X.shape, (333, 2))
         self.assertEqual(y.shape, (333,))
 
+
+class TestFigure(unittest.TestCase):
     def test_fig(self):
         self.assertTrue(os.path.exists("./figs/decision_region.png"))
 
