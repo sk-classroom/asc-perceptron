@@ -4,6 +4,7 @@ import sys
 
 sys.path.append("assignments/")
 from assignment import *
+import os
 
 
 class TestPerceptron(unittest.TestCase):
@@ -30,6 +31,9 @@ class TestPerceptron(unittest.TestCase):
         X, y = load_penguin_data()
         self.assertEqual(X.shape, (333, 2))
         self.assertEqual(y.shape, (333,))
+
+    def test_fig(self):
+        self.assertTrue(os.path.exists("./figs/decision_region.png"))
 
 
 if __name__ == "__main__":
