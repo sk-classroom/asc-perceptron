@@ -17,8 +17,8 @@ In this assignment, you will be implementing and training one of the earliest al
 
 1. You can import `assignments/utils.py` and use their functions (if any)
 
-1. You can verify your implementation by using `notebooks/develop.py`. If you prefer to work with Jupyter notebook, you can convert the Python script by jupytext. 
+1. You can verify your implementation by using `notebooks/develop.py`. If you prefer to work with Jupyter notebook, you can convert the Python script by jupytext. `jupytext --to notebook <name_of_script_file>.py`
 
 2. [You can review your autograding results](https://docs.github.com/en/education/manage-coursework-with-github-classroom/learn-with-github-classroom/view-autograding-results)
 
-3. If you have any questions, use a special "Feedback" pull request to specify the part in question in the code. And text the instructors. See [here](https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/leave-feedback-with-pull-requests) for this Feedback pull request.
+3. If you have any questions, use a special "Feedback" pull request to specify the part in question in the code. And text the instructors with the link. See [here](https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/leave-feedback-with-pull-requests) for this Feedback pull request.

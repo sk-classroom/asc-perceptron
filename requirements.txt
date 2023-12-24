@@ -14,3 +14,4 @@ umap-learn
 faiss
 torchvision
 torchaudio
+jupytext
