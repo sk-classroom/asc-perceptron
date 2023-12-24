@@ -17,7 +17,7 @@ In this assignment, you will be implementing and training one of the earliest al
 
 1. You can import `assignments/utils.py` and use their functions (if any)
 
-1. You can verify your implementation by using `notebooks/develop.py`. If you prefer to work with Jupyter notebook, you can convert the Python script by
+1. You can verify your implementation by using `notebooks/develop.py`. If you prefer to work with Jupyter notebook, you can convert the Python script by jupytext. 
 
 2. [You can review your autograding results](https://docs.github.com/en/education/manage-coursework-with-github-classroom/learn-with-github-classroom/view-autograding-results)
 
