@@ -1,7 +1,7 @@
 # %% Load the penguin data
 import numpy as np
 import pandas as pd
-
+import matplotlib.pylab as plt
 from assignment import *
 
 # %% Creating an instance of the Perceptron class with learning rate 0.1 and 100 iterations
