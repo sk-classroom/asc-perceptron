@@ -1,5 +1,9 @@
 import unittest
 import numpy as np
+import sys
+
+sys.path.append("assignments/")
+from assignment import *
 
 
 class TestPerceptron(unittest.TestCase):
@@ -11,15 +15,21 @@ class TestPerceptron(unittest.TestCase):
 
     def test_fit(self):
         self.p.fit(self.X, self.y)
-        self.assertIsNotNone(self.p.w_)
-        self.assertIsNotNone(self.p.b_)
 
     def test_predict(self):
+        # Run fit
+        self.test_fit()
+
+        # Prediction
         prediction = self.p.predict([[-1, -1], [20, 20]])
         self.assertEqual(len(prediction), 2)
-        self.assertIn(prediction, [1, 0])
         self.assertAlmostEqual(prediction[0], 1)
         self.assertAlmostEqual(prediction[1], 0)
+
+    def test_load_penguin_data(self):
+        X, y = load_penguin_data()
+        self.assertEqual(X.shape, (333, 2))
+        self.assertEqual(y.shape, (333,))
 
 
 if __name__ == "__main__":
