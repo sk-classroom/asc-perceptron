@@ -1,17 +1,3 @@
-scikit-learn
 numpy
-scipy
 pandas
-seaborn
 matplotlib
-ipykernel
-tqdm
-black
-nbconvert
-requests
-torch
-umap-learn
-faiss
-torchvision
-torchaudio
-jupytext

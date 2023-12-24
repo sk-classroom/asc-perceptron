@@ -7,10 +7,6 @@ FROM mcr.microsoft.com/vscode/devcontainers/python:0-${VARIANT}
 # Define the path to the virtualenv to work with
 ARG VENV_PATH="/home/vscode/venv"
 
-RUN echo "deb http://downloads.skewed.de/apt bullseye main" >> /etc/apt/sources.list
-RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-key 612DEFB798507F25
-RUN apt-get update && apt-get install -y python3-cairo
-
 COPY requirements.txt /tmp/pip-tmp/
 RUN su vscode -c "python -m venv /home/vscode/venv" \
    && su vscode -c "${VENV_PATH}/bin/pip --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requirements.txt" \
