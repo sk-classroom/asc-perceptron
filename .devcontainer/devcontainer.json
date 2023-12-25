@@ -25,7 +25,10 @@
 				"python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
 				"python.linting.flake8Enabled": true,
 				"editor.formatOnSave": true,
-				"editor.formatOnType": true
+				"editor.formatOnType": true,
+				"python.analysis.autoImportCompletions": false,
+				"github.copilot.enable": { "*": false },
+				"editor.acceptSuggestionOnCommitCharacter": false
 			},
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
