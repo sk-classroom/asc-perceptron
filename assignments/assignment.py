@@ -1,5 +1,7 @@
+# %%
 import numpy as np
 import pandas as pd
+from typing import Any, Self
 
 
 # TODO: Implement the Perceptron class
@@ -26,7 +28,8 @@ class Perceptron:
       Number of misclassifications (updates) in each epoch.
 
     """
-    def __init__(self, eta=0.01, n_iter=50, random_state=1):
+
+    def __init__(self, eta: float = 0.01, n_iter: int = 50, random_state=1) -> None:
         self.eta = eta
         self.n_iter = n_iter
         self.random_state = random_state
@@ -34,7 +37,7 @@ class Perceptron:
         self.w_ = None
         self.b_ = None
 
-    def fit(self, X, y):
+    def fit(self, X: np.ndarray, y: np.ndarray) -> Self:
         """Fit training data.
 
         Parameters
@@ -48,12 +51,23 @@ class Perceptron:
         Returns
         -------
         self : object
-
         """
         pass
 
-    def predict(self, X):
+    def predict(self, X: np.ndarray) -> np.ndarray:
         """Return class label after unit step"""
+        pass
+
+
+# TODO: Implement the Adaline class
+class Adaline(Perceptron):
+    def __init__(self, eta: float, n_iter: int) -> None:
+        super(Adaline, self).__init__(eta=eta, n_iter=n_iter)
+
+    def fit(self, X: np.ndarray, y: np.ndarray) -> Self:
+        pass
+
+    def _prediction_linear(self, X: np.ndarray) -> np.ndarray:
         pass
 
 
@@ -76,3 +90,6 @@ def load_penguin_data():
     """
     url = "https://raw.githubusercontent.com/allisonhorst/palmerpenguins/c19a904462482430170bfe2c718775ddb7dbb885/inst/extdata/penguins.csv"
     pass
+
+
+# %%

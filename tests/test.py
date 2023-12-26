@@ -28,6 +28,25 @@ class TestPerceptron(unittest.TestCase):
         self.assertAlmostEqual(prediction[1], 0)
 
 
+class TestAdaline(unittest.TestCase):
+    def setUp(self):
+        self.p = Adaline(eta=1e-5, n_iter=1000)
+        # Generate 10 linearly separable points
+        self.X = np.array([[i, i + 1] for i in range(1, 11)])
+        self.y = np.array([1 if i <= 5 else 0 for i in range(1, 11)])
+
+    def test_fit(self):
+        self.p.fit(self.X, self.y)
+
+    def test_predict(self):
+        # Run fit
+        self.test_fit()
+
+        # Prediction
+        prediction = self.p.predict([[-1, -1], [20, 20]])
+        self.assertEqual(len(prediction), 2)
+
+
 class TestData(unittest.TestCase):
     def test_load_penguin_data(self):
         X, y = load_penguin_data()

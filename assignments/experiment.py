@@ -22,4 +22,10 @@ species, y = np.unique(
 # %% TODO: Draw the decision regions by using `plot_decision_regions` function from utils.py. Label the axes with "bill_length_mm" and "bill_depth_mm".
 from utils import plot_decision_regions  # Import the function to plot decision regions
 
-# Save the figure as png
+# %% TODO Save the figure as png
+
+
+# %% Optional: Fit Adaline and draw the decision regions.
+
+
+# %% Optional: Apply the standard scaler to the data and draw the decision regions.
