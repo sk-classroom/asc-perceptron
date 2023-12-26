@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 
 
+# TODO: Implement the Perceptron class
 class Perceptron:
     """Perceptron classifier.
 
@@ -25,11 +26,13 @@ class Perceptron:
       Number of misclassifications (updates) in each epoch.
 
     """
-
     def __init__(self, eta=0.01, n_iter=50, random_state=1):
         self.eta = eta
         self.n_iter = n_iter
         self.random_state = random_state
+        self._errors = []
+        self.w_ = None
+        self.b_ = None
 
     def fit(self, X, y):
         """Fit training data.
