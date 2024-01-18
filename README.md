@@ -1,7 +1,7 @@
 # asc-perceptron
 Training an artificial perceptron for classification
 
-In this assignment, you will be implementing and training one of the earliest algorithmically described machine learning algorithms for classification: the perceptron. You will be using Python to build the perceptron from scratch and then train it to classify different flower species in the Iris dataset. This task will provide you with a deeper understanding of machine learning algorithms for classification and their efficient implementation in Python.
+In this assignment, you will be implementing and training one of the earliest algorithmically described machine learning algorithms for classification: the perceptron. You will be using Python to build the perceptron from scratch and then train it to classify different penguin species in the Iris dataset. This task will provide you with a deeper understanding of machine learning algorithms for classification and their efficient implementation in Python.
 
 
 # Task
