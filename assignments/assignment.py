@@ -58,6 +58,10 @@ class Perceptron:
         """Return class label after unit step"""
         pass
 
+    def net_input(self, X: np.ndarray) -> np.ndarray:
+        """Calculate net input"""
+        pass
+
 
 # TODO: Implement the Adaline class
 class Adaline(Perceptron):
